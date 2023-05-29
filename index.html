@@ -131,9 +131,7 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>hugo new site myblog cd myblog 网页新增仓库 myblog echo “# myblog” » README.md git init git add . git status git commit -m “first commit” git branch -M main git remote add origin git@github.com:davidpythonseo/myblog.git git remote -v git push -u origin main
-打开网页创建分支 开通读写权限 mkdir -p .github/workflows touch .github/workflows/deploy.yml vim .github/workflows/deploy.yml
-name: Publish to GH Pages on: push: branches: - main pull_request: jobs: deploy: runs-on: ubuntu-latest steps: - name: Checkout source uses: actions/checkout@v3 with: submodules: true - name: Checkout destination uses: actions/checkout@v3 if: github....</p>
+    <p>hugo new site myblog cd myblog 网页新增仓库 myblog echo “# myblog” » README.md git init git add . git status git commit -m “first commit” git branch -M main git remote add origin git@github.com:davidpythonseo/myblog.git git remote -v git push -u origin main 打开网页创建分支 开通读写权限 mkdir -p .github/workflows touch .github/workflows/deploy.yml vim .github/workflows/deploy.yml name: Publish to GH Pages on: push: branches: - main pull_request: jobs: deploy: runs-on: ubuntu-latest steps: - name: Checkout source uses: actions/checkout@v3 with: submodules: true - name: Checkout destination uses: actions/checkout@v3 if: github....</p>
   </div>
   <footer class="entry-footer"><span title='2023-05-29 19:21:20 +0800 +0800'>May 29, 2023</span></footer>
   <a class="entry-link" aria-label="post link to 第一篇日志" href="http://davidpythonseo.github.io/myblog/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%97%A5%E5%BF%97/"></a>
